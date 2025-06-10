@@ -20,3 +20,10 @@ sudo mount /dev/vgubuntu/root /mnt/vgubuntu-root # mount
 df -h # verify
 sudo umount /mnt/vgubuntu-root # unmount
 ```
+
+## ansible-playbook
+```bash
+- name: Print toolbox
+      debug:
+        msg: "Toolbox: {{ toolbox }}"
+```
