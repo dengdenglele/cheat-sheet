@@ -7,3 +7,6 @@ git commit --allow-empty -m "creates a new commmit, even if there are no changes
 git fetch --prune
 git log --oneline
 ```
+
+## grep
+grep root /etc/passwd
