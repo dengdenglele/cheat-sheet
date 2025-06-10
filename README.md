@@ -10,3 +10,13 @@ git log --oneline
 
 ## grep
 grep root /etc/passwd
+
+## mount stuff
+```bash
+sudo lvscan # check if active
+sudo lvchange -ay /dev/vgubuntu/root # activate if inactive
+sudo mkdir -p /mnt/vgubuntu-root # create mount point
+sudo mount /dev/vgubuntu/root /mnt/vgubuntu-root # mount
+df -h # verify
+sudo umount /mnt/vgubuntu-root # unmount
+```
