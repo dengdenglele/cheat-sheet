@@ -16,6 +16,7 @@ grep -r docker /etc/apt
 
 ## mount stuff
 ```bash
+sudo apt install lvm2 # might be missing, gparted told me to install it
 sudo lvscan # check if active
 sudo lvchange -ay /dev/vgubuntu/root # activate if inactive
 sudo mkdir -p /mnt/vgubuntu-root # create mount point
