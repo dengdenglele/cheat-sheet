@@ -36,3 +36,7 @@ sudo umount /mnt/vgubuntu-root # unmount
 view /var/log/syslog
 dmesg
 ```
+## decoding
+```
+echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % sign at the end of the line
+```
