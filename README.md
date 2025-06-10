@@ -26,9 +26,13 @@ sudo umount /mnt/vgubuntu-root # unmount
 
 ## ansible-playbook
 ```bash
-- name: Print toolbox
-      debug:
-        msg: "Toolbox: {{ toolbox }}"
+- name: Print something
+  debug:
+    msg: "Something: {{ something }}"
+
+- name: Run a role from anywhere
+  include_role:
+    name: just_another_role
 ```
 
 ## log stuff
