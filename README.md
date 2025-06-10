@@ -27,3 +27,9 @@ sudo umount /mnt/vgubuntu-root # unmount
       debug:
         msg: "Toolbox: {{ toolbox }}"
 ```
+
+## log stuff
+```bash
+view /var/log/syslog
+dmesg
+```
