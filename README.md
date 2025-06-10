@@ -9,7 +9,10 @@ git log --oneline
 ```
 
 ## grep
+```
 grep root /etc/passwd
+grep -r docker /etc/apt
+```
 
 ## mount stuff
 ```bash
