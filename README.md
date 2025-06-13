@@ -45,3 +45,8 @@ dmesg
 ```
 echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % sign at the end of the line
 ```
+
+## R
+```
+rm(list = ls())
+```
