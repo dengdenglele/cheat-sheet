@@ -55,3 +55,8 @@ rm(list = ls())
 ```
 gpg list-keys
 ```
+
+## apt
+```
+apt-policy cache vim
+```
