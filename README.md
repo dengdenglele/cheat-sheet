@@ -50,3 +50,8 @@ echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % 
 ```
 rm(list = ls())
 ```
+
+## GPG
+```
+gpg list-keys
+```
