@@ -57,10 +57,7 @@ gpg list-keys
 ```
 
 ## apt
+```
 apt rdepends <package-name>
 apt-policy cache <package-name>
-
-## apt
-```
-apt-policy cache vim
 ```
