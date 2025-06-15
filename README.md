@@ -61,3 +61,8 @@ gpg list-keys
 apt rdepends <package-name>
 apt-policy cache <package-name>
 ```
+
+## diagnostics
+```
+sudo smartctl -a /dev/sdX
+```
