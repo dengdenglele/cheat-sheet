@@ -1,5 +1,32 @@
 # cheat-sheet
 
+## ansible-playbook
+```bash
+- name: Print something
+  debug:
+    msg: "Something: {{ something }}"
+
+- name: Run a role from anywhere
+  include_role:
+    name: just_another_role
+```
+
+## apt
+```
+apt rdepends <package-name>
+apt-policy cache <package-name>
+```
+
+## decoding
+```
+echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % sign at the end of the line
+```
+
+## diagnostics
+```
+sudo smartctl -a /dev/sdX
+```
+
 ## git
 ```bash
 git checkout -- .
@@ -8,10 +35,21 @@ git fetch --prune # check, if remote branches still exist. If not, then remove i
 git log --oneline
 ```
 
+## gpg
+```
+gpg list-keys
+```
+
 ## grep
 ```
 grep root /etc/passwd
 grep -r docker /etc/apt
+```
+
+## log stuff
+```bash
+view /var/log/syslog
+dmesg
 ```
 
 ## mount stuff
@@ -25,44 +63,7 @@ df -h # verify
 sudo umount /mnt/vgubuntu-root # unmount
 ```
 
-## ansible-playbook
-```bash
-- name: Print something
-  debug:
-    msg: "Something: {{ something }}"
-
-- name: Run a role from anywhere
-  include_role:
-    name: just_another_role
-```
-
-## log stuff
-```bash
-view /var/log/syslog
-dmesg
-```
-## decoding
-```
-echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % sign at the end of the line
-```
-
 ## R
 ```
 rm(list = ls())
-```
-
-## GPG
-```
-gpg list-keys
-```
-
-## apt
-```
-apt rdepends <package-name>
-apt-policy cache <package-name>
-```
-
-## diagnostics
-```
-sudo smartctl -a /dev/sdX
 ```
