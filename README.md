@@ -67,3 +67,10 @@ sudo umount /mnt/vgubuntu-root # unmount
 ```
 rm(list = ls())
 ```
+
+## swap
+```
+cat /proc/sys/vm/swappiness # read current swappiness
+echo "vm.swappiness = 1" | sudo tee /etc/sysctl.d/vm.swappiness.conf # set swappiness then reboot
+```
+
