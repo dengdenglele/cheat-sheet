@@ -70,7 +70,7 @@ rm(list = ls())
 
 ## swap
 ```
-cat /proc/sys/vm/swappiness # read current swappiness
+cat /proc/sys/vm/swappiness # read current swappiness, Debian/Ubuntu default 60, servers 1
 echo "vm.swappiness = 1" | sudo tee /etc/sysctl.d/vm.swappiness.conf # set swappiness then reboot
 ```
 
