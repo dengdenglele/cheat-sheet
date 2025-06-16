@@ -78,3 +78,8 @@ echo "vm.swappiness = 1" | sudo tee /etc/sysctl.d/vm.swappiness.conf # set swapp
 ```
 systemctl reboot --firmware-setup # enter BIOS via systemd
 ```
+
+## vim
+```
+:set nocp?
+```
