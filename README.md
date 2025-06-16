@@ -74,3 +74,7 @@ cat /proc/sys/vm/swappiness # read current swappiness, Debian/Ubuntu default 60,
 echo "vm.swappiness = 1" | sudo tee /etc/sysctl.d/vm.swappiness.conf # set swappiness then reboot
 ```
 
+## systemctl
+```
+systemctl reboot --firmware-setup # enter BIOS via systemd
+```
