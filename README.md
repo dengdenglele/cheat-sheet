@@ -76,6 +76,7 @@ echo "vm.swappiness = 1" | sudo tee /etc/sysctl.d/vm.swappiness.conf # set swapp
 
 ## systemctl
 ```
+systemctl # list all services
 systemctl reboot --firmware-setup # enter BIOS via systemd
 ```
 
