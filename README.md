@@ -84,3 +84,9 @@ systemctl reboot --firmware-setup # enter BIOS via systemd
 ```
 :set nocp?
 ```
+
+## /etc/sudoers.d/drop-in-file-no-extension
+```
+sudo visudo /etc/sudoers.d/drop-in-file-no-extension
+username ALL=(ALL) NOPASSWD: /usr/bin/apt update, /usr/bin/apt upgrade -y
+```
