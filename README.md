@@ -46,6 +46,14 @@ grep root /etc/passwd
 grep -r docker /etc/apt
 ```
 
+## hardware/system clock
+```
+date
+sudo hwclock --show
+sudo hwclock --systohc # set hardware clock to system time
+sudo hwclock --hctosys # set system time to hardware clock
+```
+
 ## log stuff
 ```bash
 view /var/log/syslog
