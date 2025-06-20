@@ -17,6 +17,16 @@ apt rdepends <package-name>
 apt-policy cache <package-name>
 ```
 
+## apt-key (deprecated!!!)
+```
+apt-key list # show all keys
+gpg --no-default-keyring --keyring /etc/apt/trusted.gpg --list-keys # view contents inside of trusted.gpg file
+sudo apt-key del <key-id> # if key is only in /etc/apt/trusted.gpg and does not have a key file
+ls /etc/apt/trusted.gpg.d/ # view files inside of trusted.gpg.d/ directory
+sudo rm /etc/apt/trusted.gpg.d/<key-file>.gpg # delete a single key file
+sudo apt update # make sure apt recognizes new/deleted/modified keys
+```
+
 ## decoding
 ```
 echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % sign at the end of the line
