@@ -27,6 +27,12 @@ sudo rm /etc/apt/trusted.gpg.d/<key-file>.gpg # delete a single key file
 sudo apt update # make sure apt recognizes new/deleted/modified keys
 ```
 
+## dd
+```
+time dd if=/dev/zero of=datei bs=1M count=10240 # how long it takes to write 10 GB
+time dd if=datei of=/dev/null # how long it takes to read
+```
+
 ## decoding
 ```
 echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % sign at the end of the line
