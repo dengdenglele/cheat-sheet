@@ -27,6 +27,14 @@ sudo rm /etc/apt/trusted.gpg.d/<key-file>.gpg # delete a single key file
 sudo apt update # make sure apt recognizes new/deleted/modified keys
 ```
 
+## chmod
+```
+cd /path/to/directory/with/incorrect/permissions # assuming everything is green, equals 777 permissions
+find . -type f -exec chmod 644 {} \; # Make all regular files 644
+find . -type d -exec chmod 755 {} \; # Make all directories 755
+chmod 755 gradlew # Make specific scripts executable
+```
+
 ## dd
 ```
 time dd if=/dev/zero of=datei bs=1M count=10240 # how long it takes to write 10 GB
