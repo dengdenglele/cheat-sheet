@@ -79,6 +79,12 @@ sudo hwclock --systohc # set hardware clock to system time
 sudo hwclock --hctosys # set system time to hardware clock
 ```
 
+## journalctl
+```bash
+journalctl -xe # -x additional eXplanation when available, -e jump to End of journal logs
+journalctl -xeu <name-of-a>.service # -u filter log entries by a specific systemd Unit
+```
+
 ## log stuff
 ```bash
 view /var/log/syslog
