@@ -117,6 +117,7 @@ echo "vm.swappiness = 1" | sudo tee /etc/sysctl.d/vm.swappiness.conf # set swapp
 ```
 systemctl # list all active services
 systemctl reboot --firmware-setup # enter BIOS via systemd
+systemctl status <name-of-a>.service # alternative to journalctl
 ```
 
 ## vim
