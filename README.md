@@ -102,6 +102,12 @@ df -h # verify
 sudo umount /mnt/vgubuntu-root # unmount
 ```
 
+## python
+```bash
+python -m venv /path/to/<name-of-venv-directory> # the directory will be created by python
+source /path/to/<name-of-venv-directory>/bin/activate # activate venv
+```
+
 ## R
 ```
 rm(list = ls())
