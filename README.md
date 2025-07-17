@@ -88,6 +88,7 @@ journalctl -xeu <name-of-a>.service # -u filter log entries by a specific system
 ## log stuff
 ```bash
 view /var/log/syslog
+less /var/log/syslog
 dmesg
 ```
 
