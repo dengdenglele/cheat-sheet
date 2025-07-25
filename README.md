@@ -127,6 +127,11 @@ systemctl reboot --firmware-setup # enter BIOS via systemd
 systemctl status <name-of-a>.service # alternative to journalctl
 ```
 
+## sudo
+```
+sudo adduser <username> sudo
+```
+
 ## vim
 ```
 :set nocp?
