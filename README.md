@@ -114,6 +114,12 @@ source /path/to/<name-of-venv-directory>/bin/activate # activate venv
 rm(list = ls())
 ```
 
+## stat
+```bash
+stat / | grep "Birth"
+```
+
+
 ## swap
 ```
 cat /proc/sys/vm/swappiness # read current swappiness, Debian/Ubuntu default 60, servers 1
