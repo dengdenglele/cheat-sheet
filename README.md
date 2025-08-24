@@ -79,6 +79,11 @@ sudo hwclock --systohc # set hardware clock to system time
 sudo hwclock --hctosys # set system time to hardware clock
 ```
 
+## hostnamectl
+```
+sudo hostnamectl set-hostname awesome-hostname
+```
+
 ## journalctl
 ```bash
 journalctl -xe # -x additional eXplanation when available, -e jump to End of journal logs
