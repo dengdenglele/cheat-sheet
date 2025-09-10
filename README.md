@@ -97,6 +97,11 @@ less /var/log/syslog
 dmesg
 ```
 
+## make multiple directories
+```bash
+mkdir -p $HOME/testdir/folder-{2..5}/{a,b}{x,y,z}/{c,d,e}
+```
+
 ## mount stuff
 ```bash
 sudo apt install lvm2 # might be missing, gparted told me to install it
