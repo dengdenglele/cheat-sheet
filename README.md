@@ -97,7 +97,7 @@ less /var/log/syslog
 dmesg
 ```
 
-## make multiple directories
+## mkdir
 ```bash
 mkdir -p $HOME/testdir/folder-{2..5}/{a,b}{x,y,z}/{c,d,e}
 ```
@@ -146,6 +146,11 @@ systemctl status <name-of-a>.service # alternative to journalctl
 ## sudo
 ```
 sudo adduser <username> sudo
+```
+
+## touch
+```bash
+touch /tmp/file{001..100}.txt
 ```
 
 ## vim
