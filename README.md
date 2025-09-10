@@ -88,12 +88,15 @@ sudo hostnamectl set-hostname awesome-hostname
 ```bash
 journalctl -xe # -x additional eXplanation when available, -e jump to End of journal logs
 journalctl -xeu <name-of-a>.service # -u filter log entries by a specific systemd Unit
+journalctl -f # follow system protocol changes in real time
 ```
 
 ## log stuff
 ```bash
+# /var/log/syslog not available in Debian 12, use journalctl instead
 view /var/log/syslog
 less /var/log/syslog
+tail -f /var/log/syslog # follow changes instead of reloading tail manually
 dmesg
 ```
 
