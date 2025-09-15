@@ -98,6 +98,9 @@ view /var/log/syslog
 less /var/log/syslog
 tail -f /var/log/syslog # follow changes instead of reloading tail manually
 dmesg
+# WHERE’S MY /VAR/LOG/AUTH.LOG?
+sudo apt install rsyslog
+sudo view /var/log/auth.log
 ```
 
 ## mkdir
