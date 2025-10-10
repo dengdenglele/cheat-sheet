@@ -135,6 +135,10 @@ rm(list = ls())
 stat / | grep "Birth"
 ```
 
+## ssh
+```
+ssh-copy-id -i /path/to/your/public_key.pub username@remote_host
+```
 
 ## swap
 ```
