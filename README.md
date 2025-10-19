@@ -58,6 +58,9 @@ git checkout -- .
 git commit --allow-empty -m "creates a new commmit, even if there are no changes in the repository"
 git fetch --prune # check, if remote branches still exist. If not, then remove information about origin locally
 git log --oneline
+
+git config core.sshCommand "ssh -i /path/to/your/private_key" # use specific ssh key for a repo
+git config --get core.sshCommand # verify if specific key is used in ./repo/.git/config
 ```
 
 ## gpg
