@@ -52,6 +52,12 @@ echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % 
 sudo smartctl -a /dev/sdX
 ```
 
+## find
+```
+find /path/to/your/directory -type d -exec chmod 755 {} + # in a given directory change permissions recursively of all subdirectories
+find /path/to/your/directory -type f -exec chmod 644 {} + # in a given directory change permissions recursively of all files 
+```
+
 ## git
 ```bash
 git checkout -- .
