@@ -40,6 +40,7 @@ chmod 755 gradlew # Make specific scripts executable
 time dd if=/dev/zero of=datei bs=1M count=10240 # how long it takes to write 10 GB
 time dd if=datei of=/dev/null # how long it takes to read
 dd if=/dev/zero of=/path/of/largefile.bin bs=1G count=400 # write a 400 GB big special file with null bytes
+dd if=anyISOfile.iso of=/dev/sdX bs=8M oflag=direct # use direct I/O for data, bypass OS's cache
 ```
 
 ## decoding
