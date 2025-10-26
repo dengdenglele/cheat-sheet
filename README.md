@@ -93,6 +93,15 @@ sudo hwclock --hctosys # set system time to hardware clock
 sudo hostnamectl set-hostname awesome-hostname
 ```
 
+## jobs
+```
+# use Ctrl+z to put the current program in background
+fg
+jobs
+fg %3
+bg %2
+```
+
 ## journalctl
 ```bash
 journalctl -xe # -x additional eXplanation when available, -e jump to End of journal logs
