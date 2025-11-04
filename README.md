@@ -190,6 +190,7 @@ touch /tmp/file{001..100}.txt
 ```
 :set nocp?
 vim +10 ~/.bashrc
+vim .
 ```
 
 ## /etc/sudoers.d/drop-in-file-no-extension
