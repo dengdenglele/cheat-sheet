@@ -68,6 +68,9 @@ git log --oneline
 
 git config core.sshCommand "ssh -i /path/to/your/private_key" # use specific ssh key for a repo
 git config --get core.sshCommand # verify if specific key is used in ./repo/.git/config
+
+git remote -v # verify what remote is available
+git remote remove origin
 ```
 
 ## gpg
