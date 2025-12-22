@@ -141,6 +141,13 @@ df -h # verify
 sudo umount /mnt/vgubuntu-root # unmount
 ```
 
+## nmcli
+```bash
+nmcli connection import type wireguard file random_vpn_name.conf
+nmcli connection show random_vpn_name | grep auto
+nmcli connection modify random_vpn_name autoconnect off
+```
+
 ## python
 ```bash
 python -m venv /path/to/<name-of-venv-directory> # the directory will be created by python
