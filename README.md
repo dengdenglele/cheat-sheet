@@ -177,7 +177,7 @@ stat / | grep "Birth"
 
 ## ssh
 ```
-ssh-keygen -t ed25519 -C "this is a comment"
+ssh-keygen -t ed25519 -C "this is a comment in pub key" -f ~/.ssh/<name-of-private-key-without-extension>
 eval $(ssh-agent)
 ps aux | grep <Agent pid xyz>
 ssh-add
