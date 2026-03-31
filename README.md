@@ -63,6 +63,8 @@ find /path/to/your/directory -type f -exec chmod 644 {} + # in a given directory
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "Your Mail (can be fake)"
+git config --global init.defaultBranch main
+cat ~/.gitconfig
 
 git checkout -- .
 git commit --allow-empty -m "creates a new commmit, even if there are no changes in the repository"
