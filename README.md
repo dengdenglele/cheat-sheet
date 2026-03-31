@@ -61,6 +61,9 @@ find /path/to/your/directory -type f -exec chmod 644 {} + # in a given directory
 
 ## git
 ```bash
+git config --global user.name "Your Name"
+git config --global user.email "Your Mail (can be fake)"
+
 git checkout -- .
 git commit --allow-empty -m "creates a new commmit, even if there are no changes in the repository"
 git fetch --prune # check, if remote branches still exist. If not, then remove information about origin locally
