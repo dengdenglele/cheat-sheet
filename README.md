@@ -16,6 +16,7 @@
 apt rdepends <package-name>
 apt-policy cache <package-name>
 apt search vim | grep installed
+view /var/log/apt/history.log
 ```
 
 ## apt-key (deprecated!!!)
