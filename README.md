@@ -76,6 +76,11 @@ git config --get core.sshCommand # verify if specific key is used in ./repo/.git
 
 git remote -v # verify what remote is available
 git remote remove origin
+
+git diff <filename>
+git add <filename>
+
+git push origin main
 ```
 
 ## gpg
