@@ -29,6 +29,11 @@ sudo rm /etc/apt/trusted.gpg.d/<key-file>.gpg # delete a single key file
 sudo apt update # make sure apt recognizes new/deleted/modified keys
 ```
 
+## cat
+```
+cat /etc/os-release
+```
+
 ## chmod
 ```
 cd /path/to/directory/with/incorrect/permissions # assuming everything is green, equals 777 permissions
