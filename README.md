@@ -15,6 +15,7 @@
 ```
 apt rdepends <package-name>
 apt-policy cache <package-name>
+apt search vim | grep installed
 ```
 
 ## apt-key (deprecated!!!)
