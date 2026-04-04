@@ -198,6 +198,7 @@ eval $(ssh-agent)
 ps aux | grep <Agent pid xyz>
 ssh-add
 ssh-copy-id -i /path/to/your/public_key.pub username@remote_host
+ssh -i /path/to/your/private_key username@remote_host
 ssh -t user@hostname 'export TERM=xterm-256color; bash' # open a session with colored prompt, etc. Could also be forced within ~/.bashrc
 ```
 
