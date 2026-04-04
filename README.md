@@ -166,6 +166,15 @@ nmcli connection show random_vpn_name | grep auto
 nmcli connection modify random_vpn_name autoconnect off
 ```
 
+## ntfs
+```bash
+sudo apt install ntfs-3g
+sudo dnf install ntfs-3g
+sudo pacman -S ntfs-3g
+
+sudo ntfsfix /dev/sdX
+```
+
 ## python
 ```bash
 python -m venv /path/to/<name-of-venv-directory> # the directory will be created by python
