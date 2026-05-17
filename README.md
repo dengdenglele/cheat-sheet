@@ -181,6 +181,12 @@ python -m venv /path/to/<name-of-venv-directory> # the directory will be created
 source /path/to/<name-of-venv-directory>/bin/activate # activate venv
 ```
 
+## python interpreter
+```python
+# The Zen of Python, by Tim Peters
+import this
+```
+
 ## R
 ```
 rm(list = ls())
