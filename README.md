@@ -60,6 +60,12 @@ echo "decode-this-passphrase" | base64 --decode # do not copy the highlighted % 
 sudo smartctl -a /dev/sdX
 ```
 
+## echo
+```bash
+# Returns the exit status (return code) of the last-run command: 0 means success; any non-zero value indicates an error
+echo $?
+```
+
 ## find
 ```
 find /path/to/your/directory -type d -exec chmod 755 {} + # in a given directory change permissions recursively of all subdirectories
