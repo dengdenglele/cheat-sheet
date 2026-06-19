@@ -107,6 +107,8 @@ gpg list-keys
 ```
 grep root /etc/passwd
 grep -r docker /etc/apt
+# What's a five-letter word whose third letter is 'j' and last letter is 'r' that means...?
+grep -i '^..j.r$' /usr/share/dict/words 
 ```
 
 ## hardware/system clock
