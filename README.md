@@ -32,6 +32,7 @@ sudo apt update # make sure apt recognizes new/deleted/modified keys
 ## cat
 ```
 cat /etc/os-release
+cat /usr/share/dict/words
 ```
 
 ## chmod
