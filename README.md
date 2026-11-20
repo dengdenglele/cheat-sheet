@@ -228,6 +228,11 @@ ssh-add
 ssh-copy-id -i /path/to/your/public_key.pub username@remote_host
 ssh -i /path/to/your/private_key username@remote_host
 ssh -t user@hostname 'export TERM=xterm-256color; bash' # open a session with colored prompt, etc. Could also be forced within ~/.bashrc
+
+## check remote fingerprint on the remote
+ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub
+## check remote fingerprint on the client receiving it
+ssh-keyscan -t ed25519 <hostname-or-ip> 2>/dev/null | ssh-keygen -lf -
 ```
 
 ## swap
